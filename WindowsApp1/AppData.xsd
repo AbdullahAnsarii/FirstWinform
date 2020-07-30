@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AppData" targetNamespace="http://tempuri.org/AppData.xsd" xmlns:mstns="http://tempuri.org/AppData.xsd" xmlns="http://tempuri.org/AppData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="cn" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="cn (MySettings)" PropertyReference="ApplicationSettings.WindowsApp1.My.MySettings.GlobalReference.Default.cn" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="IntroTableAdapter" GeneratorDataComponentClassName="IntroTableAdapter" Name="Intro" UserDataComponentName="IntroTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="cn (MySettings)" DbObjectName="Intro" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Name_Field, Age FROM Intro</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name_Field" DataSetColumn="Name_Field" />
+              <Mapping SourceColumn="Age" DataSetColumn="Age" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AppData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AppData" msprop:Generator_UserDSName="AppData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Intro" msprop:Generator_TableClassName="IntroDataTable" msprop:Generator_TableVarName="tableIntro" msprop:Generator_TablePropName="Intro" msprop:Generator_RowDeletingName="IntroRowDeleting" msprop:Generator_RowChangingName="IntroRowChanging" msprop:Generator_RowEvHandlerName="IntroRowChangeEventHandler" msprop:Generator_RowDeletedName="IntroRowDeleted" msprop:Generator_UserTableName="Intro" msprop:Generator_RowChangedName="IntroRowChanged" msprop:Generator_RowEvArgName="IntroRowChangeEvent" msprop:Generator_RowClassName="IntroRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name_Field" msprop:Generator_ColumnVarNameInTable="columnName_Field" msprop:Generator_ColumnPropNameInRow="Name_Field" msprop:Generator_ColumnPropNameInTable="Name_FieldColumn" msprop:Generator_UserColumnName="Name_Field" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Age" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_UserColumnName="Age" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
